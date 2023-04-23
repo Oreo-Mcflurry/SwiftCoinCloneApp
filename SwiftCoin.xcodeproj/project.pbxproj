@@ -11,6 +11,12 @@
 		B88CBE5429F4DD4F00C41547 /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = B88CBE5329F4DD4F00C41547 /* ContentView.swift */; };
 		B88CBE5629F4DD5000C41547 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = B88CBE5529F4DD5000C41547 /* Assets.xcassets */; };
 		B88CBE5929F4DD5000C41547 /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = B88CBE5829F4DD5000C41547 /* Preview Assets.xcassets */; };
+		B88CBE6829F4DDF900C41547 /* HomeView.swift in Sources */ = {isa = PBXBuildFile; fileRef = B88CBE6729F4DDF900C41547 /* HomeView.swift */; };
+		B88CBE6A29F4DE9600C41547 /* TopMoversView.swift in Sources */ = {isa = PBXBuildFile; fileRef = B88CBE6929F4DE9600C41547 /* TopMoversView.swift */; };
+		B88CBE6C29F4DEA700C41547 /* TopMoversItemView.swift in Sources */ = {isa = PBXBuildFile; fileRef = B88CBE6B29F4DEA700C41547 /* TopMoversItemView.swift */; };
+		B88CBE6E29F4E21C00C41547 /* AllCoinView.swift in Sources */ = {isa = PBXBuildFile; fileRef = B88CBE6D29F4E21C00C41547 /* AllCoinView.swift */; };
+		B88CBE7029F4E22A00C41547 /* CoinRowView.swift in Sources */ = {isa = PBXBuildFile; fileRef = B88CBE6F29F4E22A00C41547 /* CoinRowView.swift */; };
+		B88CBE7229F4ECE000C41547 /* HomeViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = B88CBE7129F4ECE000C41547 /* HomeViewModel.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -19,6 +25,12 @@
 		B88CBE5329F4DD4F00C41547 /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
 		B88CBE5529F4DD5000C41547 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		B88CBE5829F4DD5000C41547 /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
+		B88CBE6729F4DDF900C41547 /* HomeView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeView.swift; sourceTree = "<group>"; };
+		B88CBE6929F4DE9600C41547 /* TopMoversView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TopMoversView.swift; sourceTree = "<group>"; };
+		B88CBE6B29F4DEA700C41547 /* TopMoversItemView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TopMoversItemView.swift; sourceTree = "<group>"; };
+		B88CBE6D29F4E21C00C41547 /* AllCoinView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AllCoinView.swift; sourceTree = "<group>"; };
+		B88CBE6F29F4E22A00C41547 /* CoinRowView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CoinRowView.swift; sourceTree = "<group>"; };
+		B88CBE7129F4ECE000C41547 /* HomeViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeViewModel.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -51,8 +63,11 @@
 		B88CBE5029F4DD4F00C41547 /* SwiftCoin */ = {
 			isa = PBXGroup;
 			children = (
-				B88CBE5129F4DD4F00C41547 /* SwiftCoinApp.swift */,
-				B88CBE5329F4DD4F00C41547 /* ContentView.swift */,
+				B88CBE6329F4DD7600C41547 /* Utils */,
+				B88CBE6229F4DD7600C41547 /* Extensions */,
+				B88CBE6129F4DD7500C41547 /* Models */,
+				B88CBE6029F4DD7400C41547 /* Core */,
+				B88CBE5F29F4DD7200C41547 /* App */,
 				B88CBE5529F4DD5000C41547 /* Assets.xcassets */,
 				B88CBE5729F4DD5000C41547 /* Preview Content */,
 			);
@@ -65,6 +80,73 @@
 				B88CBE5829F4DD5000C41547 /* Preview Assets.xcassets */,
 			);
 			path = "Preview Content";
+			sourceTree = "<group>";
+		};
+		B88CBE5F29F4DD7200C41547 /* App */ = {
+			isa = PBXGroup;
+			children = (
+				B88CBE5129F4DD4F00C41547 /* SwiftCoinApp.swift */,
+				B88CBE5329F4DD4F00C41547 /* ContentView.swift */,
+			);
+			path = App;
+			sourceTree = "<group>";
+		};
+		B88CBE6029F4DD7400C41547 /* Core */ = {
+			isa = PBXGroup;
+			children = (
+				B88CBE6429F4DDAF00C41547 /* Home */,
+			);
+			path = Core;
+			sourceTree = "<group>";
+		};
+		B88CBE6129F4DD7500C41547 /* Models */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Models;
+			sourceTree = "<group>";
+		};
+		B88CBE6229F4DD7600C41547 /* Extensions */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Extensions;
+			sourceTree = "<group>";
+		};
+		B88CBE6329F4DD7600C41547 /* Utils */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Utils;
+			sourceTree = "<group>";
+		};
+		B88CBE6429F4DDAF00C41547 /* Home */ = {
+			isa = PBXGroup;
+			children = (
+				B88CBE6629F4DDE700C41547 /* View */,
+				B88CBE6529F4DDE500C41547 /* ViewModel */,
+			);
+			path = Home;
+			sourceTree = "<group>";
+		};
+		B88CBE6529F4DDE500C41547 /* ViewModel */ = {
+			isa = PBXGroup;
+			children = (
+				B88CBE7129F4ECE000C41547 /* HomeViewModel.swift */,
+			);
+			path = ViewModel;
+			sourceTree = "<group>";
+		};
+		B88CBE6629F4DDE700C41547 /* View */ = {
+			isa = PBXGroup;
+			children = (
+				B88CBE6729F4DDF900C41547 /* HomeView.swift */,
+				B88CBE6929F4DE9600C41547 /* TopMoversView.swift */,
+				B88CBE6B29F4DEA700C41547 /* TopMoversItemView.swift */,
+				B88CBE6D29F4E21C00C41547 /* AllCoinView.swift */,
+				B88CBE6F29F4E22A00C41547 /* CoinRowView.swift */,
+			);
+			path = View;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -137,8 +219,14 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				B88CBE6A29F4DE9600C41547 /* TopMoversView.swift in Sources */,
+				B88CBE6E29F4E21C00C41547 /* AllCoinView.swift in Sources */,
+				B88CBE6829F4DDF900C41547 /* HomeView.swift in Sources */,
+				B88CBE7229F4ECE000C41547 /* HomeViewModel.swift in Sources */,
 				B88CBE5429F4DD4F00C41547 /* ContentView.swift in Sources */,
 				B88CBE5229F4DD4F00C41547 /* SwiftCoinApp.swift in Sources */,
+				B88CBE7029F4E22A00C41547 /* CoinRowView.swift in Sources */,
+				B88CBE6C29F4DEA700C41547 /* TopMoversItemView.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
