@@ -28,9 +28,9 @@ struct TopMoversItemView: View {
             }
             // coin percent change
             
-            Text("+ 5.6%")
+            Text("- 5.6%")
                 .font(.title2)
-                .foregroundColor(.green)
+                .foregroundColor(.red)
         }
         .frame(width: 140, height: 140)
         .overlay {
