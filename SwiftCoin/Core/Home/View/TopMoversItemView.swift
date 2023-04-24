@@ -6,7 +6,8 @@
 //
 
 import SwiftUI
-import Kingfisher
+import Kingfisher       // GitHub에서 패키지를 다운받음
+// https://github.com/onevcat/Kingfisher
 
 struct TopMoversItemView: View {
     let coin: Coin
@@ -14,7 +15,7 @@ struct TopMoversItemView: View {
     var body: some View {
         VStack(alignment: .leading) {
             // image
-            KFImage(URL(string: coin.image))
+            KFImage(URL(string: coin.image))    // URL이미지를 쉽게 띄울수 있음
                 .resizable()
                 .frame(width: 32, height: 32)
                 .foregroundColor(.orange)
@@ -25,15 +26,15 @@ struct TopMoversItemView: View {
                     .font(.caption)
                     .fontWeight(.bold)
                 
-                Text(coin.currentPrice.toCurrency())
+                Text(coin.currentPrice.toCurrency()) // Extension을 이용해서 출력의 결과를 바꿨다.
                     .font(.caption)
                     .foregroundColor(.gray)
             }
             // coin percent change
             
-            Text(coin.priceChangePercentage24H.toPercent())
+            Text("\(coin.priceChangePercentage24H >= 0.00 ? "+" : "")" + "\(coin.priceChangePercentage24H.toPercent())")
                 .font(.title2)
-                .foregroundColor(.red)
+                .foregroundColor(coin.priceChangePercentage24H >= 0.00 ? .red : .blue)
         }
         .frame(width: 140, height: 140)
         .overlay {

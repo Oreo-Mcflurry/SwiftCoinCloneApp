@@ -26,14 +26,6 @@ extension Double {
         return formatter
     }
     
-    private var rankFormatter: NumberFormatter {
-        let formatter = NumberFormatter()
-        formatter.numberStyle = .currency
-        formatter.maximumFractionDigits = 0
-        formatter.minimumFractionDigits = 0
-        return formatter
-    }
-    
     func toCurrency() -> String {
         return currencyFormatter.string(for: self) ?? "$0.00"
     }

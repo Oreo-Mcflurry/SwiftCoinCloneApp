@@ -2,6 +2,7 @@
 
 import Foundation
 
+// https://app.quicktype.io 이사이트에서 만듦. api의 형식을 붙여놓으면 어떻게 struct를 구성해야하는지 알려줌.
 struct Coin: Codable, Identifiable {
     let id, symbol, name: String
     let image: String
